@@ -106,7 +106,7 @@ int main() {
     for (int i = 0; i < m; i++)
         carrinho.push_back(0);
     
-    while (true!=false){
+    while (1){
         embarque(fila, carrinho, n, m);
         imprimir(fila, carrinho, m, 2);
         this_thread::sleep_for(5s);
