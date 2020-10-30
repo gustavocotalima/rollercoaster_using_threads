@@ -4,7 +4,6 @@
 #include <queue>  
 #include <chrono>
 #include <mutex>
-#include <condition_variable>
 
 #ifdef _WIN32
 #include <Windows.h>
@@ -94,7 +93,6 @@ void desembarque (queue<int> &fila, vector<int>&carrinho, int n, int m){
 
 int main() {
     srand (time(NULL)); 
-    condition_variable cv;
 
     int n = rand () % 160 + 40;
     int m = rand () % 16 + 4;
